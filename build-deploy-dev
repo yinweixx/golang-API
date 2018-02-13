@@ -1,0 +1,5 @@
+#!/bin/sh
+echo "building anyun-cloud-api-gateway.."
+go build -o anyun-cloud-api-gateway-darwin-amd64
+GOOS=linux GOARCH=amd64 go build -o anyun-cloud-api-gateway-linux-amd64
+#scp release/anyun-cloud-host-agent-linux-amd64  dev-host-main:/usr/local/bin/anyun-cloud-host-agent-linux-amd64
